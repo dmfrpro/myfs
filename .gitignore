@@ -1,0 +1,17 @@
+# nix
+result
+result-*
+
+# modules
+*.ko
+*.mod
+*.mod.*
+*.o
+*.symvers
+*.order
+
+# Ignore all dot files and folder
+.*
+# But not those
+!.gitignore
+!.envrc
