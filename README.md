@@ -73,6 +73,7 @@ build-fs-test
 # Run the module in VM with args
 # usage: runvm <module_args>
 runvm disk_name=vda sb_first=0 sb_second=10
+mount -t myfs /dev/vda /mnt
 
 # In another terminal, attach GDB
 rungdb
@@ -120,6 +121,7 @@ Start the VM:
 ```bash
 nix develop
 runvm disk_name=vda sb_first=0 sb_second=10
+mount -t myfs /dev/vda /mnt
 ```
 
 In a second terminal, launch GDB:
